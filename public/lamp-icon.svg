@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="flameGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFDD55" />
+      <stop offset="60%" stop-color="#FF8800" />
+      <stop offset="100%" stop-color="#FF4400" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="brassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5E0A3" />
+      <stop offset="45%" stop-color="#C9A45C" />
+      <stop offset="80%" stop-color="#8C6627" />
+      <stop offset="100%" stop-color="#5E4314" />
+    </linearGradient>
+  </defs>
+  <!-- Flame -->
+  <circle cx="50" cy="22" r="18" fill="url(#flameGlow)" opacity="0.6" />
+  <path d="M50 8 C47 16, 44 22, 47 28 C49 32, 51 32, 53 28 C56 22, 53 16, 50 8 Z" fill="#FFE57F" />
+  <path d="M50 14 C48.5 19, 47 23, 48.5 27 C49.5 29, 50.5 29, 51.5 27 C53 23, 51.5 19, 50 14 Z" fill="#FFA000" />
+  
+  <!-- Crown / Makudam -->
+  <path d="M47 30 L53 30 L52 35 L48 35 Z" fill="url(#brassGrad)" />
+  <circle cx="50" cy="36" r="3" fill="url(#brassGrad)" />
+  
+  <!-- Oil Bowl / Thattu -->
+  <ellipse cx="50" cy="42" rx="22" ry="5" fill="url(#brassGrad)" stroke="#5E4314" stroke-width="0.8" />
+  <path d="M30 42 Q50 49 70 42 Q50 54 30 42 Z" fill="url(#brassGrad)" />
+  
+  <!-- Central Stem / Thandu -->
+  <path d="M47 48 L46 72 Q44 74 42 76 L58 76 Q56 74 54 72 L53 48 Z" fill="url(#brassGrad)" />
+  <!-- Rings on stem -->
+  <ellipse cx="50" cy="56" rx="6" ry="1.5" fill="#FFE57F" />
+  <ellipse cx="50" cy="65" rx="7" ry="1.8" fill="#FFE57F" />
+  
+  <!-- Base / Peedam -->
+  <path d="M42 76 L36 84 C34 87, 66 87, 64 84 L58 76 Z" fill="url(#brassGrad)" />
+  <ellipse cx="50" cy="85" rx="26" ry="6" fill="url(#brassGrad)" stroke="#5E4314" stroke-width="1" />
+  <ellipse cx="50" cy="88" rx="28" ry="4" fill="#5E4314" />
+</svg>

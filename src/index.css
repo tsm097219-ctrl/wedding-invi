@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-ivory: #F5EBD5;
+    --color-cream: #FFF8E8;
+    --color-brass: #C9A45C;
+    --color-gold: #D6B56C;
+    --color-maroon: #6B241C;
+    --color-temple: #4A3022;
+    --color-green: #31533A;
+    --color-darkgreen: #203A2A;
+    --color-wood: #3D2B1F;
+  }
+
+  body {
+    background-color: #FFF8E8;
+    color: #4A3022;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Cinzel', 'Cinzel Decorative', Georgia, serif;
+    letter-spacing: 0.05em;
+  }
+}
+
+/* Authentic Kasavu Border Generator */
+.kasavu-border-t {
+  position: relative;
+  background-image: repeating-linear-gradient(
+    90deg,
+    #D6B56C 0px,
+    #D6B56C 3px,
+    #C9A45C 3px,
+    #C9A45C 6px,
+    #B38B3F 6px,
+    #B38B3F 9px,
+    #F3E5AB 9px,
+    #F3E5AB 12px
+  );
+  height: 4px;
+}
+
+.kasavu-pattern-gold {
+  background: 
+    linear-gradient(135deg, rgba(201, 164, 92, 0.15) 25%, transparent 25%),
+    linear-gradient(225deg, rgba(201, 164, 92, 0.15) 25%, transparent 25%),
+    linear-gradient(45deg, rgba(201, 164, 92, 0.15) 25%, transparent 25%),
+    linear-gradient(315deg, rgba(201, 164, 92, 0.15) 25%, #FFF8E8 25%);
+  background-position: 10px 0, 10px 0, 0 0, 0 0;
+  background-size: 20px 20px;
+  background-repeat: repeat;
+}
+
+/* Subtle handmade paper grain texture */
+.paper-texture {
+  background-color: #FFF8E8;
+  background-image: radial-gradient(rgba(74, 48, 34, 0.04) 1px, transparent 0);
+  background-size: 16px 16px;
+}
+
+/* Brass metallic text gradient */
+.text-brass-metallic {
+  background: linear-gradient(135deg, #E6C875 0%, #C9A45C 40%, #8E6B28 70%, #D8B96E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-subtle {
+  background: linear-gradient(180deg, #DFBE74 0%, #B89241 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Temple wooden dark card */
+.temple-wood-card {
+  background: linear-gradient(165deg, #3D2B1F 0%, #2A1D15 100%);
+  border: 1px solid rgba(201, 164, 92, 0.3);
+  box-shadow: 0 15px 35px -5px rgba(32, 22, 16, 0.4), inset 0 1px 0 rgba(214, 181, 108, 0.2);
+}
+
+/* Deep Kerala Green Card */
+.kerala-green-card {
+  background: linear-gradient(165deg, #31533A 0%, #1E3424 100%);
+  border: 1px solid rgba(201, 164, 92, 0.35);
+  box-shadow: 0 15px 35px -5px rgba(26, 44, 31, 0.4), inset 0 1px 0 rgba(214, 181, 108, 0.25);
+}
+
+/* Warm Ivory Card */
+.kerala-ivory-card {
+  background: linear-gradient(180deg, #FFFDF8 0%, #F5EBD5 100%);
+  border: 1px solid rgba(201, 164, 92, 0.3);
+  box-shadow: 0 12px 30px -8px rgba(74, 48, 34, 0.08), 0 0 0 1px rgba(201, 164, 92, 0.15);
+}
+
+/* Custom scrollbar matching temple theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #2A1D15;
+}
+::-webkit-scrollbar-thumb {
+  background: #C9A45C;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D6B56C;
+}
+
+/* Floating animation helper */
+@keyframes subtleSway {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(0.8deg);
+  }
+}
+
+.animate-subtle-sway {
+  animation: subtleSway 7s ease-in-out infinite;
+}
